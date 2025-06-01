@@ -1,0 +1,45 @@
+✅ Vulnerability Assessment Report Using Nessus Essentials
+
+1. Install OpenVAS or Nessus Essentials
+
+For this task, I chose Nessus Essentials — a free version of the Tenable Nessus vulnerability scanner for educational use. It was installed from the official Tenable website and activated using a valid license key provided via email.
+
+
+2. Set up scan target as your local machine IP or localhost
+
+I used ipconfig on Windows to find my local machine’s active IP address. The correct IP was:192.168.127.40
+
+This address belongs to my Wi-Fi adapter and represents my Windows system on the local network. I entered this as the target in Nessus.
+
+
+3. Start a full vulnerability scan
+
+I created a new scan using the “Basic Network Scan” template provided by Nessus Essentials. The settings included:
+
+Scanner: Local
+
+Scan Target: 192.168.127.40
+
+No credentials were provided (non-authenticated scan)
+
+All ports and services were scanned
+
+4. Wait for scan to complete 
+
+The scan was started at 7:43 PM and completed at approximately 8:33 PM. It took just under 50 minutes to fully analyze the system and gather vulnerability data.
+
+5. Review the report for vulnerabilities and severity
+Once completed, the scan report listed:
+
+Critical vulnerabilities: 1
+
+High vulnerabilities: 1
+
+Medium vulnerabilities: 6
+
+Info-level findings: 45
+
+Total vulnerabilities: 53
+
+These were categorized by severity and included detailed plugin information, CVSS scores, and links to remediation resources.
+

@@ -1,0 +1,28 @@
+7. Document the most critical vulnerabilities
+
+🔐 1. Oracle Database Unsupported Version
+Plugin ID: 55786
+
+CVSS v3 Score: 10.0 (Critical)
+
+Impact: Exposes the database to remote exploitation
+
+Solution: Upgrade to a supported Oracle version
+
+🔐 2. Oracle TNS Listener Remote Poisoning
+
+Plugin ID: 69552
+
+CVSS v3 Score: 7.3 (High)
+
+Impact: Allows attackers to redirect database traffic
+
+Solution: Restrict access and patch Oracle Listener
+
+🔐 3. SSL Self-Signed / Untrusted Certificates
+
+Plugin IDs: 51192, 57582, 15901
+
+Impact: Users may be vulnerable to spoofing or MITM attacks
+
+Solution: Install valid, up-to-date certificates

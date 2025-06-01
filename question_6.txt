@@ -1,0 +1,17 @@
+6. Research simple fixes or mitigations for found vulnerabilities
+Top findings and solutions:
+
+🔴 Oracle Database Unsupported Version (Critical)
+→ Upgrade the Oracle DB to a supported version, as the current one no longer receives security patches.
+
+🔴 Oracle TNS Listener Poisoning (High)
+→ Apply Oracle patch or configure valid TNS administration settings to restrict access.
+
+🟠 SSL Certificate Issues (Medium)
+→ Replace self-signed or expired certificates with valid, trusted certificates issued by a CA.
+
+🟠 SMB Signing Not Required
+→ Enforce SMB signing via local security policy to prevent man-in-the-middle attacks.
+
+🟠 HSTS Missing
+→ Configure web servers to enforce HTTP Strict Transport Security headers.
